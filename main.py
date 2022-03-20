@@ -19,17 +19,17 @@ cv2.imshow("Dialation",imgDialation)
 cv2.imshow("Eroded",imgEroded)
 cv2.waitKey(0)
 
-# frameWidth = 480
-# frameHeight =480
-# cap = cv2.VideoCapture("Resources/sample.mp4")
-# cap.set(3,frameWidth)
-# cap.set(4,frameHeight)
+frameWidth = 480
+frameHeight =480
+cap = cv2.VideoCapture("Resources/sample.mp4")
+cap.set(3,frameWidth)
+cap.set(4,frameHeight)
 
-# while True:
-#     success,img = cap.read()
-#     img = cv2.resize(img,(frameWidth,frameHeight))
-#     cv2.imshow("video",img)
-#
-#
-#     if cv2.waitKey(1) & 0xFF == ord('q'):
-#         break
+while True:
+    success,img = cap.read(
+    img = cv2.resize(img,(frameWidth,frameHeight))
+    cv2.imshow("video",img)
+
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
